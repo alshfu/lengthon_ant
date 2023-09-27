@@ -1,0 +1,4 @@
+enum ScreenMode {
+  CreateAnts,
+  PlayGame,
+}

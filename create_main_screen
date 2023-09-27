@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Создание новых директорий
+mkdir -p lib/screens
+mkdir -p lib/games/langtons_ant
+
+# Создание новых файлов
+touch lib/screens/main_screen.dart
+touch lib/screens/langtons_ant_screen.dart
+touch lib/games/langtons_ant/langtons_ant_game.dart
+touch lib/games/langtons_ant/ant.dart
+touch lib/games/langtons_ant/cell.dart
+
+# Перемещение старых файлов в новую директорию
+mv lib/game_service.dart lib/games/langtons_ant/game_service.dart
+mv lib/game_screen.dart lib/screens/langtons_ant_screen.dart
